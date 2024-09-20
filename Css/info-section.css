@@ -11,7 +11,7 @@ body {
 .images-container {
   display: flex;
   justify-content: space-between;
-  gap: 30px; /* Add a gap between the images */
+  gap: 35px; /* Add a gap between the images */
   margin-bottom: 30px;
   width: 100%;
   max-width: 1300px; /* Adjust width to control image container size */
@@ -48,12 +48,13 @@ body {
   max-width: 1300px; /* Adjust the max width to align with the images */
   width: 100%;
   text-align: left;
-  margin: 80px auto; /* Center the text container */
-  gap: 20px; /* Ensure there is space between text blocks */
+  margin: 40px auto; /* Center the text container */
+  gap: 0px; /* Ensure there is space between text blocks */
 }
 
+
 .text-block {
-  /* width: 32%; Each text block takes one-third of the space */
+  width: 32%; 
 }
 
 .text-block p {
@@ -63,20 +64,24 @@ body {
 }
 
 .success-rate-btn {
-  background-color: #5aa09c;
-  color: white;
-  padding: 15px 30px;
-  border: none;
+  border: 2px solid #5BC8AF; /* Outline matching the image */
+  color: #5BC8AF; /* Text color matching the outline */
+  padding: 15px 80px; /* Adjusted padding for similar spacing */
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 24px; /* Adjusted font size to closely match */
+  font-weight: bold; /* Bold text */
   text-align: center;
-  margin-top: 20px; /* Add spacing at the top */
+  background-color: transparent; /* Transparent background */
+  transition: all 0.3s ease; /* Smooth hover transition */
+  display: inline-block;
 }
 
 .success-rate-btn:hover {
-  background-color: #4b8b7f; /* Add hover effect */
+  background-color: #5BC8AF; /* Fill color on hover */
+  color: white; /* White text on hover */
 }
+
 
 @media (max-width: 768px) {
   .images-container {
