@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
   background-color: #f8f9fa;
 }
 
@@ -54,32 +54,6 @@ body {
   text-decoration: none;
 }
 
-.hero-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 100px 20px;
-  background-image: url("Group.png"); /* Add your background image URL */
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-section .content h1 span {
-  color: #5aa09c;
-}
-
-@media (max-width: 768px) {
-  .hero-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .hero-section .content {
-    justify-content: center;
-    text-align: center;
-    width: 80%;
-  }
-}
 
 .testimonial-section {
   display: flex;

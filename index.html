@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="Css/info-section.css" />
     <link rel="stylesheet" href="Css/Testimonals.css" />
     <link rel="stylesheet" href="Css/Organise.css" />
+    <link rel="stylesheet" href="Css/Herosection.css" />
     <link rel="stylesheet" href="Css/Contactform.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="navbar">
@@ -121,26 +123,105 @@
     </section>
 
     <div class="testimonial-container">
-      <div class="testimonial-image">
-        <img src="image.png" alt="Abbie Harvey" />
+        <!-- Left arrow for navigation -->
+        <button class="arrow-btn left" id="prevBtn">‹</button>
+        
+        <!-- Testimonial image -->
+        <div class="testimonial-image">
+          <img src="image1.png" alt="Abbie Harvey" id="testimonialImage" />
+        </div>
+      
+        <!-- Testimonial content -->
+        <div class="testimonial-content">
+          <h3 id="testimonialName">Abbie Harvey</h3>
+          <p id="testimonialText">
+            "I have been caring for my mom & dad off and on for about 10 years
+            now, and I know the importance of me being there for appointments.
+            Older people need attention, love, and care that they truly deserve."
+          </p>
+          <span class="quote-icon">❝</span>
+        </div>
+      
+        <!-- Right arrow for navigation -->
+        <button class="arrow-btn right" id="nextBtn">›</button>
       </div>
-      <div class="testimonial-content">
-        <h3>Abbie Harvey</h3>
-        <p>
-          "I have been caring for my mom & dad off and on for about 10 years
-          now, and I know the importance of me being there for appointments.
-          Older people need attention, love, and care that they truly deserve."
-        </p>
-        <span class="quote-icon">❝</span>
+      
+      <!-- Carousel indicators -->
+      <div class="carousel-indicators">
+        <span class="dot active" id="dot1"></span>
+        <span class="dot" id="dot2"></span>
+        <span class="dot" id="dot3"></span>
       </div>
-    </div>
-
-    <div class="carousel-indicators">
-      <span class="dot active"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-
+      
+      <script>
+        // Testimonial data array
+        const testimonials = [
+          {
+            name: "Abbie Harvey",
+            text: "I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of me being there for appointments. Older people need attention, love, and care that they truly deserve.",
+            image: "image1.png"
+          },
+          {
+            name: "John Doe",
+            text: "Caring for my elderly parents has taught me the importance of love and patience. Every moment spent with them is a cherished one.",
+            image: "image2.png"
+          },
+          {
+            name: "Jane Smith",
+            text: "I understand the importance of companionship for seniors. They need emotional support and respect to lead fulfilling lives.",
+            image: "image3.png"
+          }
+        ];
+      
+        let currentIndex = 0;
+      
+        // Elements to update
+        const testimonialName = document.getElementById("testimonialName");
+        const testimonialText = document.getElementById("testimonialText");
+        const testimonialImage = document.getElementById("testimonialImage");
+      
+        // Carousel indicators
+        const dots = document.querySelectorAll(".dot");
+      
+        // Previous and Next buttons
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+      
+        // Function to update the content based on the current index
+        function updateTestimonial(index) {
+          testimonialName.textContent = testimonials[index].name;
+          testimonialText.textContent = testimonials[index].text;
+          testimonialImage.src = testimonials[index].image;
+      
+          // Update active dot
+          dots.forEach((dot, idx) => {
+            dot.classList.toggle("active", idx === index);
+          });
+      
+          // Disable prev/next buttons at edges
+          prevBtn.disabled = index === 0;
+          nextBtn.disabled = index === testimonials.length - 1;
+        }
+      
+        // Event listeners for buttons
+        prevBtn.addEventListener("click", () => {
+          if (currentIndex > 0) {
+            currentIndex--;
+            updateTestimonial(currentIndex);
+          }
+        });
+      
+        nextBtn.addEventListener("click", () => {
+          if (currentIndex < testimonials.length - 1) {
+            currentIndex++;
+            updateTestimonial(currentIndex);
+          }
+        });
+      
+        // Initial call to set the first testimonial
+        updateTestimonial(currentIndex);
+      </script>
+      
     <section class="organize-section">
       <div class="organize-header">
         <h2>We <span>Can Organize Everything</span></h2>

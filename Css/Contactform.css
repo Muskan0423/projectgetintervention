@@ -1,3 +1,7 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #f8f9fa; */
+}
 .contact-form {
     background-color: rgba(10, 97, 91, 0.8);
     padding: 30px;
