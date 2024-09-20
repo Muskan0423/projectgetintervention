@@ -7,54 +7,77 @@
     <link rel="stylesheet" href="project.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="wave">
-        <div class="container">
-            <div class="logo">
-                <img src="Vector.png" alt="Get an Intervention">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Call Now for a Consult <span>123.456.7890</span></a></li>
-                </ul>
-            </nav>
+    <header class="navbar">
+        <div class="logo">
+            <img src="Vector.png" alt="Get an Intervention">
         </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="tel:+1234567890">Call Now for a Consult</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>GET AN <span>INTERVENTION</span></h1>
-            <p>Showing greater respect to older adults can be done in several ways: acknowledging and putting to use the talents and skills of older adults; creating intergenerational initiatives; and allowing older adults to stay active and independent for as long as possible.</p>
+    <section class="hero-section">
+        <div class="content">
+            <h1>Get an <span>INTERVENTION</span></h1>
+            <p>Showing greater respect to older adults can be done in several ways...</p>
         </div>
-
         <div class="contact-form">
-            <h2>Contact Us</h2>
+            <h3>Contact Us</h3>
             <form>
-                <div class="row">
-                    <input type="text" placeholder="First Name" required>
-                    <input type="text" placeholder="Last Name" required>
-                </div>
-                <div class="row">
-                    <input type="email" placeholder="Business Email" required>
-                    <input type="text" placeholder="Company" required>
-                </div>
-                <div class="row">
-                    <select name="country" required>
-                        <option value="" disabled selected>Country</option>
-                        <!-- Add country options here -->
-                    </select>
-                </div>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Business Email">
+                <input type="text" placeholder="Company">
+                <select>
+                    <option>Country</option>
+                    <option>USA</option>
+                    <option>Canada</option>
+                    <option>UK</option>
+                </select>
                 <button type="submit">Submit</button>
             </form>
         </div>
     </section>
-</div>
 
-    <script src="scripts.js"></script>
+    <section class="info-section">
+        <h2>We <span>Understand</span></h2>
+        <p>Older adults want to stay active and contribute to society in reciprocal relationships...</p>
+        <div class="info-cards">
+            <img src="group-51.png" alt="image 1">
+            <img src="group-54.png" alt="image 2">
+            <img src="rectangle-2.png" alt="image 3">
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <div class="testimonial">
+            <img src="image.png" alt="Abbie Harvey">
+            <div class="testimonial-content">
+                <h3>Abbie Harvey</h3>
+                <p>"I have been caring for my mom & dad off and on for about 10 years now..."</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="advocacy-section">
+        <h2>We Can Organize <span>Everything</span></h2>
+        <div class="advocacy-buttons">
+            <button>Needs Assessment</button>
+            <button>Treatment Planning</button>
+            <button>Transportation & Logistics</button>
+            <button>Insurance Advocacy</button>
+            <button>Employment Advocacy</button>
+            <button>Aftercare Planning</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© Get An Intervention 2024</p>
+    </footer>
 </body>
 </html>
