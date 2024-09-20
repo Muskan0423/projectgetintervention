@@ -1,99 +1,132 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f8f9fa;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f8f9fa;
 }
 
 .organize-section {
-    padding: 50px;
-    max-width: 1200px;
-    margin: auto;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .organize-header h2 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .organize-header h2 span {
-    color: #275f55;
+  color: #275f55;
 }
 
 .organize-content {
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    margin-bottom: 30px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  text-align: left;
+  margin-bottom: 30px;
 }
 
-.left-column, .center-column, .right-column {
-    width: 32%;
-    font-size: 1rem;
-    line-height: 1.6;
+.left-column,
+.center-column,
+.right-column {
+  /* width: 32%; */
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .button-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .organize-btn {
-    flex-basis: 30%;
-    padding: 15px;
-    background-color: white;
-    border: 2px solid #275f55;
-    color: #275f55;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
-    transition: background-color 0.3s ease;
+  flex-basis: 30%;
+  padding: 15px;
+  background-color: white;
+  border: 2px solid #275f55;
+  color: #275f55;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
 }
 
 .organize-btn:hover {
-    background-color: #275f55;
-    color: white;
+  background-color: #275f55;
+  color: white;
 }
 
 .organize-btn.highlighted {
-    border-color: #5aa09c;
-    color: #5aa09c;
+  border-color: #5aa09c;
+  color: #5aa09c;
 }
 
 .organize-btn.highlighted:hover {
-    background-color: #5aa09c;
-    color: white;
+  background-color: #5aa09c;
+  color: white;
 }
 
 .info-icon {
-    font-size: 1.2rem;
-    margin-left: 5px;
-    vertical-align: middle;
+  font-size: 1.2rem;
+  margin-left: 5px;
+  vertical-align: middle;
 }
 
 .tooltip {
-    display: none;
-    background-color: #5aa09c;
-    color: white;
-    padding: 15px;
-    border-radius: 8px;
-    max-width: 400px;
-    position: absolute;
-    bottom: 50px;
-    left: 25%;
-    text-align: center;
+  display: none;
+  background-color: #5aa09c;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 400px;
+  position: absolute;
+  bottom: 50px;
+  left: 25%;
+  text-align: center;
 }
 
 .organize-btn.highlighted:hover + .tooltip {
-    display: block;
+  display: block;
+}
+@media (max-width: 768px) {
+  .organize-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  .organize-content {
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-between;
+    text-align: left; */
+    margin-bottom: 30px;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .organize-btn {
+    width: 100%;
+  }
 }
