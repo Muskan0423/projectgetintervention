@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="Css/info-section.css">
     <link rel="stylesheet" href="Css/Testimonals.css">
     <link rel="stylesheet" href="Css/Organise.css">
+    <link rel="stylesheet" href="Css/Contactform.css">
 </head>
 <body>
     <header class="navbar">
@@ -32,19 +33,27 @@
         <div class="contact-form">
             <h3>Contact Us</h3>
             <form>
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name">
-                <input type="email" placeholder="Business Email">
-                <input type="text" placeholder="Company">
+                <div class="row">
+                    <input type="text" placeholder="First Name" class="half-width">
+                    <input type="text" placeholder="Last Name" class="half-width">
+                </div>
+                <div class="row">
+                    <input type="email" placeholder="Business Email" class="half-width">
+                    <input type="text" placeholder="Company" class="half-width">
+                </div>
                 <select>
                     <option>Country</option>
                     <option>USA</option>
                     <option>Canada</option>
                     <option>UK</option>
                 </select>
-                <button type="submit">Submit</button>
+                <button type="submit">
+                    <img src="./Assests/mdi_send.png" alt="Send Icon" class="icon"> Submit
+                </button>
             </form>
         </div>
+        
+        
     </section>
 
     <section class="info-section">

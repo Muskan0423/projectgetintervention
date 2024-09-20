@@ -1,0 +1,72 @@
+.contact-form {
+    background-color: rgba(10, 97, 91, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contact-form h3 {
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact-form input, .contact-form select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 2px;     
+    background: none;
+    color: white;
+}
+
+.contact-form .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.contact-form .half-width {
+    width: 48%;
+}
+
+.contact-form input::placeholder, .contact-form select {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-form select {
+    background-color: transparent;
+}
+.contact-form button {
+    width: 50%;
+    padding: 10px;
+    margin-bottom:15px;
+    background-color: #5BC8AF;
+    color: white;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* space between icon and text */
+}
+
+.contact-form button img.icon {
+    width: 20px; /* adjust the size of the icon */
+    height: 20px;
+}
+
+.contact-form button:hover {
+    background-color: #4d8f88;
+    transition: 0.3s;
+}

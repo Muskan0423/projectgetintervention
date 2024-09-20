@@ -43,31 +43,6 @@ body {
     color: #5aa09c;
 }
 
-.contact-form {
-    background-color: rgba(10, 97, 91, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.contact-form h3 {
-    color: white;
-    margin-bottom: 10px;
-}
-
-.contact-form input, .contact-form select, .contact-form button {
-    width: 30%;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    background-color: #5aa09c;
-    color: white;
-    cursor: pointer;
-}
-
 
 
 
