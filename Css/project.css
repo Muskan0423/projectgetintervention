@@ -33,7 +33,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 100px 20px;
-    background-image: url('Group\ 54.png'); /* Add your background image URL */
+    background-image: url('Assests/Group.png'); /* Add your background image URL */
     background-size: cover;
     background-position: center;
 }
@@ -68,25 +68,8 @@ body {
     cursor: pointer;
 }
 
-.info-section {
-    text-align: center;
-    padding: 50px;
-}
 
-.info-section h2 span {
-    color: #5aa09c;
-}
 
-.info-cards {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.info-cards img {
-    width: 30%;
-    border-radius: 10px;
-}
 
 .testimonial-section {
     display: flex;
