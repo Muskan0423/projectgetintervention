@@ -1,27 +1,57 @@
-
 .hero-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 100px 20px;
-    background-image: url("Group.png"); /* Add your background image URL */
-    background-size: cover;
-    background-position: center;
+    background-image: url("/Assests/Group 55.png"), url("/Assests/image 2.png"); /* Add your background image URLs */
+    background-size: cover, cover; /* Adjust the size of each background image */
+    background-position: top, bottom; /* Position the top and bottom images */
+    background-repeat: no-repeat;
+  }
+  
+  .hero-section .content {
+    max-width: 50%;
+  }
+  
+  .hero-section .content h1 {
+    font-size: 50px;
+    color: white;
   }
   
   .hero-section .content h1 span {
     color: #5aa09c;
   }
   
+  .hero-section .content p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* Media Queries for Responsiveness */
   @media (max-width: 768px) {
     .hero-section {
       display: flex;
       flex-direction: column;
-      gap: 20px;
-    }
-    .hero-section .content {
-      justify-content: center;
+      align-items: center;
       text-align: center;
-      width: 80%;
+      padding: 50px 20px;
+      background-position: top, bottom; /* Ensure correct positioning on smaller screens */
+    }
+  
+    .hero-section .content {
+      max-width: 100%;
+      padding: 0 20px;
     }
   }
+  
+  @media (max-width: 480px) {
+    .hero-section .content h1 {
+      font-size: 36px;
+    }
+  
+    .hero-section .content p {
+      font-size: 16px;
+    }
+  }
+  
