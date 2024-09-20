@@ -33,7 +33,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 100px 20px;
-    background-image: url('Assests/Group.png'); /* Add your background image URL */
+    background-image: url('Group.png'); /* Add your background image URL */
     background-size: cover;
     background-position: center;
 }
